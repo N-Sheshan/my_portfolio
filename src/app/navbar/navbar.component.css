@@ -1,0 +1,24 @@
+.contant{
+    background-color: #282828;
+    width: 100%;
+}
+.navbar{
+ margin: 0px 25px;
+ width: 95%;
+ display: flex;
+position: fixed;
+}
+.logo{
+    font-size: 2.5rem;
+    color:#05D04C;
+    font-weight: 700;
+    margin-left: 10%;
+}
+.menuele a{
+    color: white;
+    font-size: larger;
+}
+.menuele a:hover,
+.menuele a.active{
+    color:#05D04C;
+}
