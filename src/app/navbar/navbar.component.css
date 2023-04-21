@@ -7,17 +7,23 @@
 mat-toolbar{
     background-color: #282828;
 }
+.navdiv{
+    position: relative;
+}
 .navbar{
     padding: 0 25px;
     justify-content: center;
-    position: fixed;
+    
+    position:fixed;
 }
 .logo{
     font-size: 2.5rem;
     font-weight: 700;
     font-family: 'Aboreto', cursive;
     padding-left: 4%;
-    color: #05D04C;
+    color: var(--colo3);
+    cursor: pointer;
+    text-shadow: 0 0 .5rem currentColor;
 }
 .space{
     flex: 1 1 auto;
@@ -31,6 +37,7 @@ mat-toolbar{
     padding: 0 10px;
 }
 .pagelink a{
+    position: relative;
    font-size: larger;  
    color: #DCDCDB;
    
@@ -38,9 +45,9 @@ mat-toolbar{
 .normal-top{
     font-family: cursive;
 }
-.pagelink a:hover,
+
 .pagelink a.active{
-    color: #05D04C;
+    color: var(--colo3);
 }
 .active{
     font-family: 'Atomic Age', cursive;
@@ -54,6 +61,23 @@ mat-toolbar{
     display: none;
     cursor:pointer;
 }
+.pagelink .normal-top:hover{
+    color: rgb(255, 255, 255);
+}
+.pagelink .normal-top::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    background-color:var(--colo3);
+    bottom: 0;
+    transition: 0.3s;
+}
+
+.pagelink .normal-top:hover:after{
+    width: 100%;
+}
+
 
 /* media quary */
 /* this is for 1020px adjusting the navbar*/
@@ -69,10 +93,16 @@ mat-toolbar{
     }
 
   }
+  @media only screen and (max-width: 500px) {
+    .logo{
+        font-size: 1.5rem;
+    }
+  }
 
   /*for mobile view  */
   @media only screen and (max-width: 820px) {
 
+        
         .pagelink{
             width: 100%;
             top: 100%;
@@ -87,7 +117,7 @@ mat-toolbar{
         .pagelink.active{
             display: block;
         }
-    
+       
         .pagelink li{
             font-size: 20px;
             margin: 30px 0;
@@ -99,5 +129,10 @@ mat-toolbar{
         .normal-top{
             font-family: cursive;
         }
+        .pagelink .normal-top::after{
+            
+            transition: 0.1s;
+        }
+        
 
   }

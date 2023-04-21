@@ -2,7 +2,19 @@
 /* */
 /*  */
 html{
-    background-color: #040404;
+    background-color: var(--colo2);
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */
+:root{
+    --colo1:#DCDCDB;
+    --colo2:#040404;
+    --colo3:#05D04c;
+    --colo4:#545454;
+    --colo5:#282828;
+    --colo6:#045D22;
+    --colo7:#916145;
+    --colo8:#7C7C87;
+    --colo9:#3C3C44;
+
+}
