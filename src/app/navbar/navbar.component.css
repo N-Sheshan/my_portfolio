@@ -36,7 +36,7 @@ mat-toolbar{
    
 }
 .normal-top{
-    font-family: 'Berkshire Swash', cursive;
+    font-family: cursive;
 }
 .pagelink a:hover,
 .pagelink a.active{
@@ -46,6 +46,13 @@ mat-toolbar{
     font-family: 'Atomic Age', cursive;
     font-size: x-large;
     font-weight: 600;
+}
+.bx-menu{
+    color: white;
+    font-size: 2.3rem;
+    justify-content: center;
+    display: none;
+    cursor:pointer;
 }
 
 /* media quary */
@@ -65,5 +72,32 @@ mat-toolbar{
 
   /*for mobile view  */
   @media only screen and (max-width: 820px) {
+
+        .pagelink{
+            width: 100%;
+            top: 100%;
+            /* position:absolute; */
+            display: block;
+            margin: 0;
+            height:min-content;
+            border-top: .1rem solid rgba(0, 0, 0, .2);
+            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+            display: none;
+        }
+        .pagelink.active{
+            display: block;
+        }
+    
+        .pagelink li{
+            font-size: 20px;
+            margin: 30px 0;
+        }
+        .bx-menu{
+            display: block;
+            margin-right:  20px;
+        }
+        .normal-top{
+            font-family: cursive;
+        }
 
   }
