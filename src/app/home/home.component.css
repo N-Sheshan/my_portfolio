@@ -1,0 +1,56 @@
+.home{
+    background-color: var(--colo5);
+    color: white;
+}
+.container-sm{
+    padding: 8rem 5% 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    
+}
+
+.promo-detail h3{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.promo-detail h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.promo-detail p{
+    font-size: 1rem;
+    /* line-height: 1cm; */
+}
+.promo-detail h3:nth-of-type(2){
+    margin-bottom: 2rem;
+}
+span{
+    color: var(--colo3);
+}
+.social-media i{
+    font-size: 1.5rem;
+    margin: 8px;
+    padding: 5px;
+    width: 2.8rem;
+    height: 2.8rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--colo1);
+    background-color: var(--colo8);
+    transition: .3s;
+    /* position: relative; */
+}
+
+.social-media i:hover{
+  color: var(--colo3);
+  box-shadow: 0 0 20px var(--colo6);
+  text-shadow: 0 0 10px var(--colo6);
+  border: 2px solid currentColor;
+  transform: scale(1.2);
+} 
