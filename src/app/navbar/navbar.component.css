@@ -20,6 +20,8 @@ mat-toolbar{
     font-size: 2.5rem;
     font-weight: 700;
     font-family: 'Aboreto', cursive;
+    justify-content: center;
+    text-align: center;
     padding-left: 4%;
     color: var(--colo3);
     cursor: pointer;
@@ -81,16 +83,16 @@ mat-toolbar{
 
 /* media quary */
 /* this is for 1020px adjusting the navbar*/
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1150px) {
     .navbar {
         padding: 0;
     }
     .logo{
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     .pagelink li {
         padding: 0 5px;
-    }
+  }
 
   }
   @media only screen and (max-width: 500px) {
@@ -100,7 +102,7 @@ mat-toolbar{
   }
 
   /*for mobile view  */
-  @media only screen and (max-width: 820px) {
+  @media only screen and (max-width: 960px) {
 
         
         .pagelink{
@@ -125,13 +127,14 @@ mat-toolbar{
         .bx-menu{
             display: block;
             margin-right:  20px;
+            padding-right: 20px;
         }
         .normal-top{
             font-family: cursive;
         }
         .pagelink .normal-top::after{
             
-            transition: 0.1s;
+            transition: 0.25s;
         }
         
 
