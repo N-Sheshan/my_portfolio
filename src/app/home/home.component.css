@@ -17,9 +17,29 @@
     font-weight: 700;
 }
 .promo-detail h1{
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-weight: 700;
     line-height: 1.2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 2px var(--colo3);
+    position: relative;
+}
+.promo-detail h1::before{
+    content: ' SHESHAN';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+    /* margin-left:-8px ; */
+    /* padding-right: -10px; */
+    color: var(--colo3);
+    border-right: 2px solid var(--colo3);
+    transition: 1s ease-in-out;
+}
+.promo-detail h1:hover::before{
+    width:60%;
+    filter: drop-shadow(0 0 20px var(--colo3));
 }
 .promo-detail p{
     font-size: 1rem;
@@ -28,8 +48,9 @@
 .promo-detail h3:nth-of-type(2){
     margin-bottom: 2rem;
 }
-span{
+.auto-typing{
     color: var(--colo3);
+    font-weight: 800;
 }
 .social-media i{
     font-size: 1.5rem;
@@ -50,7 +71,26 @@ span{
 .social-media i:hover{
   color: var(--colo3);
   box-shadow: 0 0 20px var(--colo6);
-  text-shadow: 0 0 10px var(--colo6);
+  text-shadow: 0 0 10px var(--colo3);
   border: 2px solid currentColor;
   transform: scale(1.2);
+  background-color: var(--colo2);
 } 
+
+.cv{
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+   height: 10vh;
+}
+.cv a{
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 50px;
+    background-color: var(--colo8);
+    color: var(--colo1);
+    border: 2px solid var(--colo3);
+}
+.cv a:hover{
+    letter-spacing: 2px;
+}

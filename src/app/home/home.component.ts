@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+// import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import Typed from 'typed.js';
+
 
 @Component({
   selector: 'app-home',
@@ -6,5 +9,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
+
+  // import Typed from 'typed.js';
+
+  ngOnInit(): void {
+    const typingEffect = new Typed(".auto-typing", {
+      strings: ['AI & DS Student', 'Programmer', 'Frontend Developer'],
+      loop: true,
+      typeSpeed: 100,
+      backSpeed: 80,
+      startDelay: 1000,
+      backDelay: 1500,
+    });
+  }
 
 }
