@@ -7,8 +7,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    
+    height: 100%;
+    overflow-x: hidden;
     
 }
 
@@ -38,7 +38,7 @@
     transition: 1s ease-in-out;
 }
 .promo-detail h1:hover::before{
-    width:60%;
+    width:100%;
     filter: drop-shadow(0 0 20px var(--colo3));
 }
 .promo-detail p{
@@ -79,18 +79,74 @@
 
 .cv{
    display: flex;
-   justify-content: center;
    align-items: center; 
-   height: 10vh;
+   position: relative;
+    width: 100%;
 }
+
 .cv a{
     text-decoration: none;
     padding: 10px 25px;
     border-radius: 50px;
     background-color: var(--colo8);
+    font-size: larger;
     color: var(--colo1);
-    border: 2px solid var(--colo3);
+    /* border: 2px solid var(--colo3); */
+    position: relative;
+    transition: 1s;
+    overflow: hidden;
+    font-weight: 500;
+    margin: 10px 50px;
 }
-.cv a:hover{
+.qrcode{
+    width: 120px;
+    height: 110px;
+    margin: 10px 50px;
+}
+.cv a::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 490%;
+    width: 140%;
+    transition: all .5s ease-in-out;
+    background: var(--colo3);
+    transform: translate(-98%,-25%) rotate(45deg);
+}
+
+.cv a:hover::after{
+    transform: translate(-9%,-25%) rotate(45deg);
     letter-spacing: 2px;
+   
 }
+.cv a span{
+    position: relative;
+    z-index: 1;
+    color: var(--colo2);
+}
+
+
+
+@media only screen and (max-width: 960px) {
+    .container-sm{
+        display: block;
+    }
+}
+@media only screen and (max-width: 525px) {
+
+    .cv{
+        display: block;
+        margin-top: 20px;
+    }
+    .cv a{
+        display: flex;
+        padding: 10px;
+        width: 50%;
+        justify-content: center;
+    }
+    .cv a::after{
+        transform: translate(-90%,-35%) rotate(45deg);    
+           }
+}
+

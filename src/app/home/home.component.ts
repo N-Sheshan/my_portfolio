@@ -14,7 +14,7 @@ export class HomeComponent {
 
   ngOnInit(): void {
     const typingEffect = new Typed(".auto-typing", {
-      strings: ['AI & DS Student', 'Programmer', 'Frontend Developer'],
+      strings: ['AI Student', 'Programmer', 'Frontend Developer'],
       loop: true,
       typeSpeed: 100,
       backSpeed: 80,
