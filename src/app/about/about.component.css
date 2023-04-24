@@ -1,0 +1,95 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&family=Tangerine:wght@700&display=swap');
+.container{
+    height: 100vh;
+    color: white;
+  
+}
+.about{
+    padding-top: 5%;
+    background-color: var(--colo9);
+    background-image:url(/assets/bgimg/about-bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-content{
+    display: flex;
+}
+.about-img{
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.about-img img{
+   padding: 2rem;
+    width: 100%;
+    height: 50%;
+}
+.about-detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-inercontent{
+    padding:5%s ;
+}
+.about-inercontent h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-family: 'Righteous', cursive;
+}
+.about-inercontent span{
+    color: var(--colo3);
+    font-family: 'Tangerine', cursive;
+}
+.about-inercontent h3{
+    margin: 2rem 0;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: 'Pacifico', cursive;
+    color: var(--colo3);
+   
+}
+.read-more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.read-more a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--colo1);
+    background-color: var(--colo8);
+    border-radius: 50px;
+    padding: 2% 5%;
+    position: relative;
+    transition: 1s;
+    z-index: 1;
+    border: 2px solid var(--colo2);
+    overflow: hidden;
+}
+.read-more a:hover{
+    color: var(--colo2);
+    box-shadow:  0 .5rem 1rem var(--colo3);
+}
+ a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 0;
+    height: 100%;
+    background: var(--colo3);
+    transform: skewX(35deg);
+    z-index: -1;
+    transition: 1s;
+}
+a:hover::before{
+    width: 100%;
+}

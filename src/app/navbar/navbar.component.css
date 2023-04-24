@@ -108,13 +108,15 @@ mat-toolbar{
         .pagelink{
             width: 100%;
             top: 100%;
-            /* position:absolute; */
+            position:absolute;
             display: block;
             margin: 0;
             height:min-content;
             border-top: .1rem solid rgba(0, 0, 0, .2);
             box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
             display: none;
+            background-color: black;
+            
         }
         .pagelink.active{
             display: block;
