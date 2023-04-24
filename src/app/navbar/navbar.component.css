@@ -9,6 +9,7 @@ mat-toolbar{
 }
 .navdiv{
     position: relative;
+    height: 80px;
 }
 .navbar{
     padding: 0 25px;

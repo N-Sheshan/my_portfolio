@@ -3,7 +3,7 @@
 .container{
     height: 100vh;
     color: white;
-  
+    isolation: isolate;
 }
 .about{
     padding-top: 5%;

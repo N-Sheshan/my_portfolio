@@ -1,7 +1,7 @@
 .home{
     background-color: var(--colo5);
     color: white;
-    background-image: url(/assets/bgimg/home-bg.jpg);
+    /* background-image: url(/assets/bgimg/home-bg.jpg); */
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
     background-size: cover;
@@ -14,9 +14,20 @@
     align-items: center;
     height: 100vh;
     overflow-x: hidden;
+    position: relative;
     
 }
-
+container-sm::before{
+    position: absolute;
+    content: '';
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+    left: 50%;
+    top: 40%;
+    background: linear-gradient(45deg,var(--colo3),var(--colo6));
+    animation: object1 6s linear infinite;
+}
 .promo-detail h3{
     font-size: 1.8rem;
     font-weight: 700;
@@ -135,11 +146,14 @@
     z-index: 1;
     color: var(--colo2);
 }
-.home-img img{
-    width: 100%;
-    height: 100%;
+.home-img{
+    position: relative;
 }
-
+.home-img .splash{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+}
 
 @media only screen and (max-width: 960px) {
     .container-sm{
